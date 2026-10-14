@@ -11,7 +11,7 @@ Open `index.html` in a browser. Or serve the folder: `python3 -m http.server 800
 2. Send a dispatch. Pick a burn timer and wrap words in `||double bars||` to redact them. Tap a bar to reveal it.
 3. Acknowledge, reply, or burn dispatches. Open your Dossier to edit your cover story.
 4. Press **Esc twice** (or click Panic) to log out and jump to a blank page.
-5. Three demo agents (`nightowl`, `paperfox`, `quietcrow`) are pre-loaded. They cannot be logged into.
+5. Three demo agents are pre-loaded. They cannot be logged into.
 
 ## Structure
 ```
