@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Privacy: the browser may only load files from this site. No third-party requests, ever. -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; form-action 'self'; base-uri 'none'">
+<meta name="referrer" content="no-referrer">
+<title>Log in | Top Secret</title>
+<link rel="icon" href="../assets/img/logo.svg">
+<link rel="stylesheet" href="../src/css/style.css">
+</head>
+<body data-root="../" data-page="login" data-auth="guest">
+<header id="nav"></header>
+<main class="wrap"><div class="card auth">
+  <h1>Log in</h1>
+  <form id="form" novalidate>
+    <label for="username">Codename</label><input id="username" autocomplete="username" required>
+    <label for="password">Passphrase</label><input id="password" type="password" autocomplete="current-password" required>
+    <p class="err" id="err" role="alert"></p>
+    <button class="btn">Log in</button>
+  </form>
+  <p class="hint">No clearance yet? <a href="signup.html">Join</a>. Accounts exist only in this browser.</p>
+</div></main>
+<script src="../src/js/main.js"></script>
+</body>
+</html>

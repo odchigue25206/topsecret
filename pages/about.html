@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Privacy: the browser may only load files from this site. No third-party requests, ever. -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; form-action 'self'; base-uri 'none'">
+<meta name="referrer" content="no-referrer">
+<title>About | Top Secret</title>
+<link rel="icon" href="../assets/img/logo.svg">
+<link rel="stylesheet" href="../src/css/style.css">
+</head>
+<body data-root="../" data-page="about">
+<header id="nav"></header>
+<main class="wrap">
+  <h1>About Top Secret</h1>
+  <p>Most social networks earn money by learning everything about you. Top Secret is a prototype of the opposite idea: say what you mean, then control how long it exists.</p>
+  <div class="card"><h2>How the privacy works</h2>
+    <ul><li><strong>No backend.</strong> The whole app is static files. Nothing you type leaves your device.</li>
+    <li><strong>Strict content policy.</strong> Each page tells the browser to load only local files, which blocks trackers and third-party scripts.</li>
+    <li><strong>No outside fonts or images.</strong> System fonts and local graphics only.</li>
+    <li><strong>Hashed passphrases.</strong> PBKDF2 with a random salt, via the browser's built-in crypto.</li>
+    <li><strong>Escaped output.</strong> Every dispatch is sanitized before display, so posts cannot run code.</li>
+    <li><strong>Burn timers.</strong> Expired dispatches are deleted from storage the next time anything is saved.</li></ul></div>
+  <div class="card"><h2>Honest limits</h2>
+    <p>This is a demo. Data lives in one browser, so you cannot see other real people's dispatches, and clearing browser data deletes your account. Redaction bars hide text visually only, and burn timers only work inside this browser. Anyone with access to your device can read its storage. A real launch would need end-to-end encryption and a server that cannot read content.</p></div>
+  <div class="card"><h2>Ground rules</h2>
+    <p>Be kind. Do not post anything illegal. You own what you write and can burn it at any time from your dossier or the Vault.</p></div>
+  <p><a class="btn" href="signup.html">Get clearance</a></p>
+</main>
+<script src="../src/js/main.js"></script>
+</body>
+</html>

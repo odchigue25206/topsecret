@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Privacy: the browser may only load files from this site. No third-party requests, ever. -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; form-action 'self'; base-uri 'none'">
+<meta name="referrer" content="no-referrer">
+<title>Dispatches | Top Secret</title>
+<link rel="icon" href="../assets/img/logo.svg">
+<link rel="stylesheet" href="../src/css/style.css">
+</head>
+<body data-root="../" data-page="feed" data-auth="required">
+<header id="nav"></header>
+<main class="wrap">
+  <form class="card" id="composer">
+    <label for="text" class="no-top">New dispatch</label>
+    <textarea id="text" maxlength="280" placeholder="Write something. Hide words like ||this||."></textarea>
+    <div class="cols"><div><label for="burn" class="no-top">Burns after</label>
+      <select id="burn"><option value="0">Never</option><option value="3600000">1 hour</option><option value="86400000">1 day</option><option value="604800000">7 days</option></select></div>
+      <div><div class="counter" id="count">0 / 280</div><button class="btn">Send</button></div></div>
+  </form>
+  <section id="list" aria-live="polite"></section>
+</main>
+<script src="../src/js/main.js"></script>
+</body>
+</html>

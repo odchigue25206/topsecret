@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Privacy: the browser may only load files from this site. No third-party requests, ever. -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; form-action 'self'; base-uri 'none'">
+<meta name="referrer" content="no-referrer">
+<title>Vault | Top Secret</title>
+<link rel="icon" href="../assets/img/logo.svg">
+<link rel="stylesheet" href="../src/css/style.css">
+</head>
+<body data-root="../" data-page="vault" data-auth="required">
+<header id="nav"></header>
+<main class="wrap">
+  <h1>Vault</h1>
+  <div class="card"><h2>What Top Secret stores</h2>
+    <table><tr><th>Item</th><th>Where</th><th>Detail</th></tr>
+    <tr><td>Account</td><td>This browser</td><td>Codename, cover story, salted passphrase hash</td></tr>
+    <tr><td>Dispatches, replies</td><td>This browser</td><td>Your text, burn time, and who acknowledged it</td></tr>
+    <tr><td>Session</td><td>This browser</td><td>Which account is logged in</td></tr>
+    <tr><td>Everything else</td><td>Nowhere</td><td>No cookies, analytics, IP logs or device fingerprints</td></tr></table></div>
+  <div class="card"><h2>Take your data</h2><p>Download dispatches and profiles as a JSON file. Passphrase data is left out.</p><button class="btn" id="export">Export my data</button></div>
+  <div class="card"><h2>Burn my account</h2><p>Removes your profile and dispatches from this browser.</p><button class="btn danger" id="del-account">Burn account</button></div>
+  <div class="card"><h2>Erase everything</h2><p>Clears all Top Secret data in this browser, including other accounts and demo dispatches.</p><button class="btn danger" id="wipe">Erase all data</button></div>
+</main>
+<script src="../src/js/main.js"></script>
+</body>
+</html>

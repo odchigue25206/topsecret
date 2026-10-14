@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Privacy: the browser may only load files from this site. No third-party requests, ever. -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; form-action 'self'; base-uri 'none'">
+<meta name="referrer" content="no-referrer">
+<title>Join | Top Secret</title>
+<link rel="icon" href="../assets/img/logo.svg">
+<link rel="stylesheet" href="../src/css/style.css">
+</head>
+<body data-root="../" data-page="signup" data-auth="guest">
+<header id="nav"></header>
+<main class="wrap"><div class="card auth">
+  <h1>Get clearance</h1>
+  <form id="form" novalidate>
+    <label for="username">Codename</label><input id="username" maxlength="20" autocomplete="username" required>
+    <p class="hint">3-20 letters, numbers or underscores. Pick something that is not your real name.</p>
+    <label for="password">Passphrase</label><input id="password" type="password" autocomplete="new-password" required>
+    <label for="confirm">Confirm passphrase</label><input id="confirm" type="password" autocomplete="new-password" required>
+    <p class="hint">8 characters or more. Stored only as a salted hash. If you forget it, it cannot be recovered.</p>
+    <p class="err" id="err" role="alert"></p>
+    <button class="btn">Create account</button>
+  </form>
+  <p class="hint">Already cleared? <a href="login.html">Log in</a>.</p>
+</div></main>
+<script src="../src/js/main.js"></script>
+</body>
+</html>
